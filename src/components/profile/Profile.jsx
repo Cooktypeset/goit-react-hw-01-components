@@ -12,12 +12,23 @@ const Profile = ({ avatar, location, stats, tag, username }) => {
             <Dscription>
                 <img src={avatar} alt="User avatar" />
                 <p>{username}</p>
-                <p>@{tag}</p>
+                <p>{tag}</p>
                 <p>{location}</p>
             </Dscription>
 
             <Stats>
-                <StatsItem></StatsItem>
+                <StatsItem>
+                    <span>Follovers</span>
+                    <span>{stats.followers}</span>
+                </StatsItem>
+                <StatsItem>
+                    <span>Views</span>
+                    <span>{stats.views}</span>
+                </StatsItem>
+                <StatsItem>
+                    <span>Likes</span>
+                    <span>{stats.likes}</span>
+                </StatsItem>
             </Stats>
         </ProfileWrapper>
     );
