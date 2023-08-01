@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import {
     ProfileWrapper,
-    Dscription,
+    Description,
     Stats,
     StatsItem,
 } from './Profile.styled';
@@ -9,12 +9,12 @@ import {
 const Profile = ({ avatar, location, stats, tag, username }) => {
     return (
         <ProfileWrapper>
-            <Dscription>
+            <Description>
                 <img src={avatar} alt="User avatar" />
                 <p>{username}</p>
                 <p>{tag}</p>
                 <p>{location}</p>
-            </Dscription>
+            </Description>
 
             <Stats>
                 <StatsItem>
